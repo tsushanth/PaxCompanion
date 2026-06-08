@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1365E8D041B132C3A7788E2E /* MockPaxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E5A3AB5A3CAD5E9EEAB1D /* MockPaxClient.swift */; };
+		3248D24601CF1085DBDBD47B /* PushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF9CB13865B0E943F69B36 /* PushService.swift */; };
+		35592F9C762A78CACDCD4CE0 /* GameLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6BB6B8CF0DC392F05099D /* GameLiveActivity.swift */; };
+		469A191D77F556191A25A884 /* PaxAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6578AD80100047E481BB6E8 /* PaxAPI.swift */; };
+		48739930F80BF394BF56E14E /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0E05A7BFEED158206EEBB /* GameAttributes.swift */; };
+		6223CB96D9DEEE113FD0BB66 /* PaxCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753957FD630BE0D10B836E85 /* PaxCompanionApp.swift */; };
+		7EBC54BB1E6CDA311F02D97D /* RootTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FBCCAC4439FF62910E2872 /* RootTabs.swift */; };
+		89FCA0E79D77980B893B77FC /* PaxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BBED36BE37C3E94BCA4E4 /* PaxModels.swift */; };
+		982C429C519F522B55F08459 /* ScenarioBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973BBE17ABF266B765E4CD8 /* ScenarioBrowserView.swift */; };
+		AADAD0108699E821CFCA8309 /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0E05A7BFEED158206EEBB /* GameAttributes.swift */; };
+		CD086069470D7D7EF3D6D2F2 /* MyGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABECE51C9B071F8B0AEA0FC /* MyGamesView.swift */; };
+		D35DE264184A679DA11FADFE /* GameStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB777D2729A5E72A59D7621 /* GameStatusWidget.swift */; };
+		D8479C1F12CF5AF6D02D985A /* PaxCompanionWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 545A2D5948585DC071C99E18 /* PaxCompanionWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3B1A337C0E64E87CE6235AB /* ScenarioShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0CB14EF9C9AC13DB04291E /* ScenarioShareCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6307213832DEC486D0335DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A3DDAFA8BCDE9EEE9EBFD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C7BF9D6FD8036E40C6A664;
+			remoteInfo = PaxCompanionWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC14D057562ED94270AF1B61 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8479C1F12CF5AF6D02D985A /* PaxCompanionWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		165BBED36BE37C3E94BCA4E4 /* PaxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxModels.swift; sourceTree = "<group>"; };
+		35DF9CB13865B0E943F69B36 /* PushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushService.swift; sourceTree = "<group>"; };
+		42C0E05A7BFEED158206EEBB /* GameAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAttributes.swift; sourceTree = "<group>"; };
+		545A2D5948585DC071C99E18 /* PaxCompanionWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PaxCompanionWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		753957FD630BE0D10B836E85 /* PaxCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxCompanionApp.swift; sourceTree = "<group>"; };
+		76EC7D59CC6F6A7AF9352C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8ABECE51C9B071F8B0AEA0FC /* MyGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGamesView.swift; sourceTree = "<group>"; };
+		9973BBE17ABF266B765E4CD8 /* ScenarioBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioBrowserView.swift; sourceTree = "<group>"; };
+		AA9E5A3AB5A3CAD5E9EEAB1D /* MockPaxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaxClient.swift; sourceTree = "<group>"; };
+		C75058ACD45F08A8CABCC144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D815B3642D9684B8BD315B28 /* PaxCompanion.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PaxCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0CB14EF9C9AC13DB04291E /* ScenarioShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioShareCard.swift; sourceTree = "<group>"; };
+		DCC6BB6B8CF0DC392F05099D /* GameLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLiveActivity.swift; sourceTree = "<group>"; };
+		E6578AD80100047E481BB6E8 /* PaxAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxAPI.swift; sourceTree = "<group>"; };
+		E6FBCCAC4439FF62910E2872 /* RootTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabs.swift; sourceTree = "<group>"; };
+		FFB777D2729A5E72A59D7621 /* GameStatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatusWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		26490F085C163411865383C4 = {
+			isa = PBXGroup;
+			children = (
+				C578259D78F12A5084EA1FA0 /* PaxCompanion */,
+				F78BC1BE6B9A8E34871A7F63 /* PaxCompanionLiveActivity */,
+				BB8BD6DF33B8A496BC69581A /* PaxCompanionWidget */,
+				E01516A59344601685E08740 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58BA6089BD8E3A44048992D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8ABECE51C9B071F8B0AEA0FC /* MyGamesView.swift */,
+				E6FBCCAC4439FF62910E2872 /* RootTabs.swift */,
+				9973BBE17ABF266B765E4CD8 /* ScenarioBrowserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EAE662E8127BD5F2942B357 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				DC0CB14EF9C9AC13DB04291E /* ScenarioShareCard.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		74145ECCD9B0DADE77EF196F /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				35DF9CB13865B0E943F69B36 /* PushService.swift */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		8B37E7CD1E7256EC1F1B319A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E5A3AB5A3CAD5E9EEAB1D /* MockPaxClient.swift */,
+				E6578AD80100047E481BB6E8 /* PaxAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BB8BD6DF33B8A496BC69581A /* PaxCompanionWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DCC6BB6B8CF0DC392F05099D /* GameLiveActivity.swift */,
+				FFB777D2729A5E72A59D7621 /* GameStatusWidget.swift */,
+				76EC7D59CC6F6A7AF9352C28 /* Info.plist */,
+			);
+			path = PaxCompanionWidget;
+			sourceTree = "<group>";
+		};
+		C578259D78F12A5084EA1FA0 /* PaxCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				C75058ACD45F08A8CABCC144 /* Info.plist */,
+				753957FD630BE0D10B836E85 /* PaxCompanionApp.swift */,
+				8B37E7CD1E7256EC1F1B319A /* API */,
+				DD8861FAF4E5F252164CC91F /* Models */,
+				74145ECCD9B0DADE77EF196F /* Push */,
+				6EAE662E8127BD5F2942B357 /* Share */,
+				58BA6089BD8E3A44048992D1 /* Views */,
+			);
+			path = PaxCompanion;
+			sourceTree = "<group>";
+		};
+		DD8861FAF4E5F252164CC91F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				165BBED36BE37C3E94BCA4E4 /* PaxModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E01516A59344601685E08740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D815B3642D9684B8BD315B28 /* PaxCompanion.app */,
+				545A2D5948585DC071C99E18 /* PaxCompanionWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F78BC1BE6B9A8E34871A7F63 /* PaxCompanionLiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				42C0E05A7BFEED158206EEBB /* GameAttributes.swift */,
+			);
+			path = PaxCompanionLiveActivity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C7BF9D6FD8036E40C6A664 /* PaxCompanionWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1A7A1E9FCEA338A238BA40 /* Build configuration list for PBXNativeTarget "PaxCompanionWidget" */;
+			buildPhases = (
+				4D8073821963804AC88160E6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaxCompanionWidget;
+			packageProductDependencies = (
+			);
+			productName = PaxCompanionWidget;
+			productReference = 545A2D5948585DC071C99E18 /* PaxCompanionWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A37D70CCB0CE5720649146DC /* PaxCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581E74E8148B2D00F68AF7AB /* Build configuration list for PBXNativeTarget "PaxCompanion" */;
+			buildPhases = (
+				CAA963080F057E136D5FC61E /* Sources */,
+				BC14D057562ED94270AF1B61 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFCF5FB4D4C34F83C3F463D7 /* PBXTargetDependency */,
+			);
+			name = PaxCompanion;
+			packageProductDependencies = (
+			);
+			productName = PaxCompanion;
+			productReference = D815B3642D9684B8BD315B28 /* PaxCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A3DDAFA8BCDE9EEE9EBFD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					95C7BF9D6FD8036E40C6A664 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					A37D70CCB0CE5720649146DC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4CAA49B87E2717019B44B678 /* Build configuration list for PBXProject "PaxCompanion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 26490F085C163411865383C4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A37D70CCB0CE5720649146DC /* PaxCompanion */,
+				95C7BF9D6FD8036E40C6A664 /* PaxCompanionWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D8073821963804AC88160E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADAD0108699E821CFCA8309 /* GameAttributes.swift in Sources */,
+				35592F9C762A78CACDCD4CE0 /* GameLiveActivity.swift in Sources */,
+				D35DE264184A679DA11FADFE /* GameStatusWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA963080F057E136D5FC61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48739930F80BF394BF56E14E /* GameAttributes.swift in Sources */,
+				1365E8D041B132C3A7788E2E /* MockPaxClient.swift in Sources */,
+				CD086069470D7D7EF3D6D2F2 /* MyGamesView.swift in Sources */,
+				469A191D77F556191A25A884 /* PaxAPI.swift in Sources */,
+				6223CB96D9DEEE113FD0BB66 /* PaxCompanionApp.swift in Sources */,
+				89FCA0E79D77980B893B77FC /* PaxModels.swift in Sources */,
+				3248D24601CF1085DBDBD47B /* PushService.swift in Sources */,
+				7EBC54BB1E6CDA311F02D97D /* RootTabs.swift in Sources */,
+				982C429C519F522B55F08459 /* ScenarioBrowserView.swift in Sources */,
+				E3B1A337C0E64E87CE6235AB /* ScenarioShareCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFCF5FB4D4C34F83C3F463D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C7BF9D6FD8036E40C6A664 /* PaxCompanionWidget */;
+			targetProxy = B6307213832DEC486D0335DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1ED6298EF64F2A70B9C7C9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		681BFD83CB053813E25E31F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		8162833D34B56483B24BD67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaxCompanionWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sushanth.paxcompanion.PaxCompanion.Widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAED8215B6A06F26C747DF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PaxCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sushanth.paxcompanion.PaxCompanion;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB7FEF487B2854FF986D4432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaxCompanionWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sushanth.paxcompanion.PaxCompanion.Widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB88430420FC3ED35B2A07D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PaxCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sushanth.paxcompanion.PaxCompanion;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1A7A1E9FCEA338A238BA40 /* Build configuration list for PBXNativeTarget "PaxCompanionWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7FEF487B2854FF986D4432 /* Debug */,
+				8162833D34B56483B24BD67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CAA49B87E2717019B44B678 /* Build configuration list for PBXProject "PaxCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED6298EF64F2A70B9C7C9E4 /* Debug */,
+				681BFD83CB053813E25E31F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		581E74E8148B2D00F68AF7AB /* Build configuration list for PBXNativeTarget "PaxCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAED8215B6A06F26C747DF77 /* Debug */,
+				EB88430420FC3ED35B2A07D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A3DDAFA8BCDE9EEE9EBFD5 /* Project object */;
+}

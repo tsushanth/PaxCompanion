@@ -78,8 +78,12 @@ struct ScenarioShareCard: View {
     /// Renders the card as a UIImage suitable for ShareLink / UIActivityViewController.
     @MainActor
     func render() -> UIImage? {
-        let renderer = ImageRenderer(content: self)
+        // ImageRenderer needs an explicit proposed size — without it, the
+        // first uiImage access can return nil before the view lays out. The
+        // .frame on the view body sets intrinsic size; we mirror it here.
+        let renderer = ImageRenderer(content: self.frame(width: 600, height: 600))
         renderer.scale = UIScreen.main.scale
+        renderer.proposedSize = ProposedViewSize(width: 600, height: 600)
         return renderer.uiImage
     }
 }

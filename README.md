@@ -1,5 +1,9 @@
 # Pax Companion
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Pax Companion demo" width="280" />
+</p>
+
 A SwiftUI iOS companion app for [Pax Historia](https://paxhistoria.co)
 that **does not try to play the game**. It surfaces game state — your
 nation, your turn, world events — through the iOS surfaces that web can't

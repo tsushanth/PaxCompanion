@@ -52,8 +52,14 @@ final class PushService: NSObject, ObservableObject {
         let state = state(for: game, event: initialEvent)
         do {
             let content = ActivityContent(state: state, staleDate: nil)
+            // pushType: nil for the demo. Real app would call
+            // UIApplication.shared.registerForRemoteNotifications() at launch
+            // and use pushType: .token here so APNs can drive updates from
+            // the Pax backend. With pushType: .token the request throws
+            // unless the app is already registered, which silently breaks
+            // the demo on simulator (no real APNs round-trip happens).
             activeActivity = try Activity.request(
-                attributes: attrs, content: content, pushType: .token)
+                attributes: attrs, content: content, pushType: nil)
         } catch {
             print("[Push] Failed to start activity: \(error)")
         }
